@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "ollama_models_available": true,
+    "real_embeddings": true,
+    "real_pdf_and_temporary_deletion": true,
+    "known_answer_and_sources": true,
+    "unknown_answer_abstains": true,
+    "collection_isolation": true,
+    "collections_deleted": true
+  },
+  "answers": {
+    "known": "Según el contexto documental, el importe total del contrato es de 125 euros.",
+    "unknown": "No tengo esa información en el documento proporcionado."
+  },
+  "timings_seconds": {
+    "known_question": 65.71,
+    "total": 82.47
+  },
+  "embedding_dimensions": 768
+}
