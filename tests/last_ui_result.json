@@ -1,0 +1,7 @@
+{
+  "initial_screen": true,
+  "upload_visible_on_main_screen": true,
+  "invalid_pdf_rejected": true,
+  "ui_question_answer_and_sources": true,
+  "clear_button": true
+}
