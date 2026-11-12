@@ -1,0 +1,58 @@
+/* Estilos locais: sem fontes, imagens ou recursos de terceiros. */
+:root { --ink:#172d35; --muted:#62767c; --accent:#147d68; }
+.stApp { background:#f5f7f6; color:var(--ink); }
+[data-testid="stHeader"] { background:transparent; }
+[data-testid="stToolbar"] { display:none; }
+[data-testid="stMainBlockContainer"] { max-width:1050px; padding:2rem 2.5rem 3rem; }
+[data-testid="stMain"] h1 { color:var(--ink); font-size:clamp(1.9rem,4.7vw,2.8rem); letter-spacing:-.055em; line-height:1.12; font-weight:750; padding:.25rem 0 .5rem; }
+[data-testid="stMain"] h3 { font-size:1.18rem; letter-spacing:-.025em; color:var(--ink); padding:.1rem 0 .4rem; }
+[data-testid="stCaptionContainer"] { color:var(--muted); }
+.brandbar { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:1.1rem; }
+.brand { display:flex; align-items:center; gap:10px; font-weight:750; font-size:16px; letter-spacing:-.025em; }
+.brandmark { display:grid; place-items:center; width:34px; height:34px; border-radius:11px; background:#173f3a; color:#d7f4e6; font-size:21px; font-weight:700; }
+.local-pill { display:flex; align-items:center; gap:7px; color:#24624e; font-size:11px; font-weight:650; background:#e7f2eb; padding:7px 10px; border:1px solid #d6e8dc; border-radius:30px; white-space:nowrap; }
+.local-dot { width:6px; height:6px; border-radius:50%; background:#318465; }
+.intro { font-size:15px; color:var(--muted); margin:0 0 .6rem; line-height:1.6; }
+.steps { display:flex; gap:12px; padding:14px 0 16px; margin-bottom:8px; border-bottom:1px solid #e0e7e3; }
+.step { display:flex; align-items:center; gap:8px; color:#687d80; font-size:12px; flex:1; }
+.step b { display:grid; place-items:center; width:24px; height:24px; flex:0 0 24px; border-radius:50%; background:#e6ece9; color:#647b74; font-size:11px; }
+.step.active { color:#1b5e50; font-weight:650; }
+.step.active b { background:#174f43; color:white; }
+[data-testid="stVerticalBlockBorderWrapper"] > div { border-color:#dfe7e2!important; border-radius:18px!important; background:white; }
+[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stVerticalBlockBorderWrapper"] > div { border-radius:12px!important; }
+[data-testid="stFileUploaderDropzone"] { background:#f2f8f4; border:1.5px dashed #9bbcaf; border-radius:12px; padding:1.35rem; min-height:120px; }
+[data-testid="stFileUploaderDropzone"]:hover { border-color:#147d68; background:#ebf5ef; }
+[data-testid="stFileUploaderDropzoneInstructions"] { gap:12px; }
+[data-testid="stFileUploaderDropzoneInstructions"] svg { color:#35745e; }
+[data-testid="stFileUploaderDropzoneInstructions"] > div > span:first-child { font-size:0; }
+[data-testid="stFileUploaderDropzoneInstructions"] > div > span:first-child::after { content:"Arraste seu PDF até aqui"; font-size:14px; font-weight:600; color:#254a3d; }
+[data-testid="stFileUploaderDropzoneInstructions"] > div > span:nth-child(2) { font-size:0; }
+[data-testid="stFileUploaderDropzoneInstructions"] > div > span:nth-child(2)::after { content:"ou use o botão ao lado · PDF até 20 MB"; font-size:11px; color:#667b71; }
+[data-testid="stFileUploaderDropzone"] button { font-size:0; background:#174f43; color:white; border:1px solid #174f43; border-radius:9px; min-height:42px; padding:0 17px; }
+[data-testid="stFileUploaderDropzone"] button::after { content:"Selecionar PDF"; font-size:13px; font-weight:650; white-space:nowrap; }
+[data-testid="stFileUploaderDropzone"] button:hover { background:#216451; border-color:#216451; color:white; }
+[data-testid="stFileUploaderDropzone"] button:focus-visible { outline:3px solid #83bca5; outline-offset:3px; }
+[data-testid="stButton"] button, [data-testid="stFormSubmitButton"] button { border-radius:9px; min-height:40px; }
+[data-testid="stTextInput"] input { color:var(--ink); }
+[data-testid="stTextInput"] > div > div { border-radius:10px; background:#f8faf9; }
+[data-testid="stForm"] { border:0; padding:0; }
+[data-testid="stText"] { white-space:pre-wrap; overflow-wrap:anywhere; font-family:inherit; font-size:15px; line-height:1.75; color:#233d3e; }
+[data-testid="stAlert"] { border-radius:11px; }
+[data-testid="stExpander"] { border-color:#dfe7e2; background:white; border-radius:12px; }
+.note { display:flex; gap:8px; align-items:flex-start; color:#617870; font-size:12px; line-height:1.6; padding:4px 0; }
+.note strong { color:#365f4f; font-weight:600; }
+.empty-heading { font-size:14px; font-weight:650; color:#38574d; margin:12px 0 4px; }
+.example { color:#657970; font-size:13px; line-height:1.75; margin:0; }
+.privacy-footer { color:#76857f; font-size:11px; line-height:1.7; border-top:1px solid #e0e7e3; margin-top:12px; padding-top:12px; }
+@media(max-width:700px) {
+ [data-testid="stMainBlockContainer"] { padding:1.25rem 1.1rem 2rem; }
+ .brandbar { margin-bottom:.75rem; }
+ .local-pill { font-size:10px; padding:6px 8px; }
+ .steps { gap:5px; }
+ .step { font-size:11px; gap:5px; }
+ [data-testid="stFileUploaderDropzone"] { padding:1rem; flex-wrap:wrap; gap:12px; }
+}
+@media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; transition:none!important; } }
+
+.st-key-upload_panel, .st-key-question_panel, .st-key-answer_panel { background:#fff; border-radius:18px; border-color:#dfe7e2!important; }
+[data-testid='stCaptionContainer'] p { color:#62767c!important; }
